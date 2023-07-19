@@ -19,5 +19,7 @@ export class CadastroComponent implements OnInit {
       this.router.navigate(['./sucesso'])
     else
       alert('Formulário inválido')
+
+    console.log(form.control)
   }
 }
