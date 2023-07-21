@@ -25,8 +25,8 @@
       <label class="campo__etiqueta" for="email">E-mail</label>
       <input name="email" id="email" type="email" class="campo__escrita" ngModel required pattern="^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$"/>
       <div *ngIf="(f.controls['email']?.invalid && f.controls['email']?.touched) || f.controls['email']?.dirty">
-        <span class="erro__texto" *ngIf="f.controls['email']?.errors?.['required']">O campo de e-mail é obrigatório</span>
-        <span class="erro__texto" *ngIf="f.controls['email']?.errors?.['pattern']">O e-mail está em formato inválido</span>
+        <span class="erro__texto" *ngIf="f.controls['email']?.errors?.['required']">O campo de email é obrigatório</span>
+        <span class="erro__texto" *ngIf="f.controls['email']?.errors?.['pattern']">O email está em formato inválido</span>
       </div>
     </div>
 
